@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="fill_parent" >
+    
+  <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical"
+    	android:background="@drawable/slidingmenu_menu_bg">
+        
+        <TextView 
+            android:id="@+id/tv_sm_menu_news"
+            android:drawableLeft="@drawable/sm_menu_tab_news"
+            android:text="新闻"
+            style="@style/sm_menu_tab_style"/>
+        
+        <TextView 
+            android:id="@+id/tv_sm_menu_focus"
+            android:drawableLeft="@drawable/sm_menu_tab_news"
+            android:text="精品"
+            style="@style/sm_menu_tab_style"/>
+        
+        <TextView 
+            android:id="@+id/tv_sm_menu_vedio"
+            android:drawableLeft="@drawable/sm_menu_tab_news"
+            android:text="视频"
+            style="@style/sm_menu_tab_style"/>
+        
+        <TextView 
+            android:id="@+id/tv_sm_menu_pic"
+            android:drawableLeft="@drawable/sm_menu_tab_pics"
+            android:text="图片"
+            style="@style/sm_menu_tab_style"/>
+        
+        <TextView 
+            android:id="@+id/tv_sm_menu_local"
+            android:drawableLeft="@drawable/sm_menu_tab_local"
+            android:text="本地"
+            style="@style/sm_menu_tab_style"/>
+        
+        <TextView 
+            android:id="@+id/tv_sm_menu_trade"
+            android:drawableLeft="@drawable/sm_menu_tab_news"
+            android:text="交易"
+            style="@style/sm_menu_tab_style"/>
+        
+        <TextView 
+            android:id="@+id/tv_sm_menu_tie"
+            android:drawableLeft="@drawable/sm_menu_tab_ties"
+            android:text="论坛"
+            style="@style/sm_menu_tab_style"/>
+        
+        <TextView 
+            android:id="@+id/tv_sm_menu_brand"
+            android:drawableLeft="@drawable/sm_menu_tab_local"
+            android:text="品牌"
+            style="@style/sm_menu_tab_style"/>
+        
+    </LinearLayout>
+
+</ScrollView>

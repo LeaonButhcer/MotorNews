@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.asus.motornews.UI.ASUSSlidingMenu
+        android:id="@+id/sm_sliding_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <!-- 左侧menu列表 -->
+        <include layout="@layout/slidingmenu_left_menu"/>
+        
+        <!-- 中间主要的显示界面 -->
+        <include layout="@layout/slidingmenu_main"/>
+         
+        <!-- 右边的用户信息 -->
+        <include layout="@layout/slidingmenu_right_setting"/>
+        
+    </com.asus.motornews.UI.ASUSSlidingMenu>
+
+</LinearLayout>

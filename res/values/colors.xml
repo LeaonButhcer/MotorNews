@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="tv_pressed">#3399CCFF</color>
+	<color name="tv_unpressed">#0099CCFF</color>
+	<color name="tv_focused">#33663300</color>
+	<color name="tv_unfocused">#00663300</color>
+</resources>

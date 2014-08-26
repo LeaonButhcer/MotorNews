@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/slidingmenu_main_top_bar_bg"
+    	android:gravity="center_vertical"
+    	android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/iv_sm_main_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slidingmenu_main_backimg" />
+        
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/slidingmenu_main_top_bar_divider" />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MotorNew"
+            android:layout_weight="1"
+            style="@style/SlidingMenuMainTopbarText"/>
+        
+        <ImageView
+            android:id="@+id/iv_sm_main_setting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/slidingmenu_main_setting" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical">
+        
+        <LinearLayout 
+            android:id="@+id/ll_main_title"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal">
+            
+            <TextView
+                android:id="@+id/tv_main_tab_title1"
+                android:text="标题1" 
+                style="@style/sm_main_title_tv_normal"/>
+            
+            <TextView 
+                android:id="@+id/tv_main_tab_title2"
+    			android:text="标题2"
+    			style="@style/sm_main_title_tv_normal"/>
+            
+        </LinearLayout>
+        
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"/>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

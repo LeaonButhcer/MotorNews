@@ -1,0 +1,81 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- 主界面的topbar中text的字体设置 -->
+    <style name="SlidingMenuMainTopbarText">
+        <item name="android:textSize">28sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    
+    <!--menu中的所有textView的样式
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dip"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+    -->    
+    <style name="sm_menu_tab_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/sm_menu_textview_bg</item>
+        <item name="android:drawablePadding">10dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">menuTabClick</item>
+    </style>
+    
+    <!-- 
+   		main界面中的普通状态下title
+     -->     
+     <style name="sm_main_title_tv_normal">
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:textSize">18sp</item>
+         <item name="android:textColor">@android:color/darker_gray</item>
+         <item name="android:layout_weight">1.0</item>
+         <item name="android:paddingTop">5dip</item>
+         <item name="android:paddingBottom">5dip</item>
+         <item name="android:paddingLeft">15dip</item>
+         <item name="android:paddingRight">15dip</item>
+         
+     </style>
+     
+     <!-- main界面中的选中状态下title -->
+     <style name="sm_main_title_tv_focus">
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:textSize">18sp</item>
+         <item name="android:textColor">@android:color/darker_gray</item>
+         <item name="android:layout_weight">1.0</item>
+         <item name="android:paddingTop">5dip</item>
+         <item name="android:paddingBottom">5dip</item>
+         <item name="android:paddingLeft">15dip</item>
+         <item name="android:paddingRight">15dip</item>
+         
+     </style>
+
+</resources>
