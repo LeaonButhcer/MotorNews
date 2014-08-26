@@ -182,6 +182,18 @@ public class ASUSSlidingMenu extends ViewGroup {
 		return currentScreen;
 	}
 
+	//解决子控件滑动与父控件滑动之间的冲突问题，当子控件的
+	boolean leftTouchEvent = true;	
+	boolean rightTouchEvent = false;
+
+	public void setLeftTouchEvent(boolean leftTouchEvent) {
+		this.leftTouchEvent = leftTouchEvent;
+	}
+
+	public void setRightTouchEvent(boolean rightTouchEvent) {
+		this.rightTouchEvent = rightTouchEvent;
+	}
+
 	@Override
 	public boolean onInterceptTouchEvent(MotionEvent ev) {
 		switch (ev.getAction()) {
@@ -191,7 +203,8 @@ public class ASUSSlidingMenu extends ViewGroup {
 		case MotionEvent.ACTION_MOVE:
 			
 			int diffX = (int) (ev.getX() - previousX);
-			if(Math.abs(diffX) > touchSlop) {
+			boolean flag = currentScreen!=MAIN_SCREEN || (leftTouchEvent&& diffX>0) || (rightTouchEvent&&diffX<0);
+			if(flag && Math.abs(diffX) > touchSlop) {
 				return true;
 			}
 			break;
@@ -199,5 +212,5 @@ public class ASUSSlidingMenu extends ViewGroup {
 			break;
 		}
 		return super.onInterceptTouchEvent(ev);
-	}
+	}	
 }
