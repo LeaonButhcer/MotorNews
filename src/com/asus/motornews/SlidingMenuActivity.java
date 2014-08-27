@@ -39,8 +39,11 @@ public class SlidingMenuActivity extends FragmentActivity implements OnClickList
 	private List<TextView> textViews;
 	
 	private int currentScreen;	//当前屏幕
-
+	
 	private List<Fragment> fragments;
+	
+	private ImageView ivTabCursor;	//滑块
+	private int cursorWidth;	//滑块图片的宽度
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -70,8 +73,15 @@ public class SlidingMenuActivity extends FragmentActivity implements OnClickList
 		tv1.setOnClickListener(new TabTextViewClickListener(0));
 		TextView tv2 = (TextView) findViewById(R.id.tv_main_tab_title2);
 		tv2.setOnClickListener(new TabTextViewClickListener(1));
+		//初始化滑块
+		initTabCursorImage();
 	}
 	
+	private void initTabCursorImage() {
+		ivTabCursor = (ImageView) findViewById(R.id.iv_sm_main_cursor);
+		
+	}
+
 	class TabTextViewClickListener implements OnClickListener{
 
 		int index;
